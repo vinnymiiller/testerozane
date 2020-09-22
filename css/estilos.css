@@ -7,28 +7,27 @@
 
 body {
     background: White;
-    font-family: Helvetica;
+    font-family: 'Varela Round', sans-serif; 
     height: 90vh;
     font-size: 10px;
-    background-color: blue;
+    background-color: white;
+    background-image: url("../img/bg1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
   }
 
 /* se a tela tiver pelo menos 400px*/
-@media (min-width: 400px) {
-  body {
-    font-size: 12px;
-  }
-}
 
-/* se a tela tiver pelo menos 800px*/
-@media (min-width: 800px) {
+/* se a tela tiver pelo menos 600px*/
+@media (min-width: 600px) {
   body {
     font-size: 14px;
   }
 }
 
-/* se a tela tiver pelo menos 1200px*/
-@media (min-width: 1200px) {
+/* se a tela tiver pelo menos 1000px*/
+@media (min-width: 1000px) {
   body {
     font-size: 16px;
   }
@@ -42,7 +41,7 @@ header {
 }
   
   .menu {
-    background-color: white;
+    background-color: #1a2948;
     position: fixed;
     width: 100vw;
     top: 0;
@@ -63,7 +62,7 @@ header {
   }
 
   a {
-    color: #f9730e;
+    color: white;
     text-decoration: none;
   }
   
@@ -71,46 +70,109 @@ header {
   .menu a:hover {
     text-decoration: underline;
   }
-  
-  .site-title,
-  .site-subtitle {
-    text-align: center;
-    color: white;
-  }
-  
   .site-title {
     font-size: 3em;
+    text-align: center;
+    color: white;
+    box-shadow: 10px 0 0 0 #1a2948, -10px 0 0 0 #1a2948;
+    background: #1a2948;
+    display: inline;
+    padding: 3px 0 !important;
   }
-
+ 
   .site-subtitle {
+    text-align: center;
+    color: #1a2948;
     font-style: italic;
     font-size: 2em;
     line-height: 1.8em;
   }
-
-  .sobre {
-    background-color: aqua;
-    height: 80vh;
+  .site-subtitle {
     text-align: center;
-    padding: 2em;
+    color: #1a2948;
+    font-style: italic;
+    font-size: 2em;
+    line-height: 1.8em;
   }
+  .site-politica {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    line-height: 1.8em;
+    box-shadow: 10px 0 0 0 #f9730e, -10px 0 0 0 #f9730e;
+    background: #f9730e;
+    display: block;
+    padding: 3px 0 !important;
+  }
+
+  .jornalista,
+  .sobre {
+    background-color:#ffcac2;
+    text-align: center;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding:2em;
+        
+  }
+
   .sobre h2 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
+    color: #1a2948;
+    font-size: 3em;
   }
   .sobre h3 {
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
   }
+  .sobre h5 {
+    font-size: 1.5em;
+    margin-bottom: 4em;
+  }
+  .sobre p {
+    margin-bottom: 1.5em;
+    font-family: 'montserrat', sans-serif;
+    text-align: justify;
+    color: #1a2948;
+    line-height: 1.25em;
+  }
+  .sobre h4 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.5em;
+    font-style: italic;
+    margin-top: 1em;
+    color: white;
+    background: #1a2948;
+    display: flex;
+  }
+
+  .sobre .imgquem {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
+  .imgquem {
+    height: auto;
+    width: 250px;
+    border-radius: 15px;
+  }
+
   .sobre .imgsobre {
     float: left;
     margin-right: 1em;
     margin-bottom: 1em;
   }
 
-  .imgsobre,
+  .imgsobre {
+      height: 150px;
+      width: 150px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+  }
   .jorn {
-      height: 180px;
-      width: 180px;
+      height: 150px;
+      width: 150px;
       object-fit: cover;
       object-position: center;
       border-radius: 10px;
@@ -121,51 +183,51 @@ header {
   }
 
   .jorn:hover {
-    transform: scale(2);
+    transform: scale(1.5);
   }
 
   .jornalista {
-    background-color:lightcoral;
-    height: 80vh;
+    height: 500px;
     padding: 2em;
     text-align: center;
   }
 
-  /* se a tela tiver pelo menos 400px*/
-@media (min-width: 400px) {
-  .jornalista {
-    height: 150vh;
-  }
-}
-
-/* se a tela tiver pelo menos 800px*/
-@media (min-width: 800px) {
-  .jornalista {
-    height: 120vh;
-  }
-  .jornal {
-    grid-template-columns: 300px 300px;
-  }
-}
-
-/* se a tela tiver pelo menos 1200px*/
-@media (min-width: 1200px) {
-  .jornalista {
-    height: 90vh;
-  }
-  .jornal {
-    grid-template-columns: 300px 300px 300px;
-  }
-}
-
   .jornalista h2 {
-    margin-bottom: 1,5em;
+    margin-bottom: 0.5em;
+    font-size: 3em;
+    color: #1a2948;
   }
 
   .jornalista h3 {
     margin-bottom: 1em;
+    color: #1a2948;
+    font-size: 1.5em;
+  }
+  .jornalista h4 {
+    margin-bottom: 1em;
+    color: #1a2948;
+    font-size: 1.5em;
   }
 
+  .jornalista a {
+    margin-bottom: 1em;
+    transition: 500ms;
+  }
+  .jornalista a:active,
+  .jornalista a:hover {
+    scale: 1.25;
+  }
+  .youtube {
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px;
+  }
+  .youtube img {
+    border-radius: 10px;
+    width: 280px;
+    height: auto;
+  }
   .jornal {
     display: grid;
     gap: 1em;
@@ -176,28 +238,180 @@ header {
     height: 80vh;
     text-align: center;
     padding: 2em;
-    background: #f9730e
+    background: #f9730e;
+    background-image: url("../img/bg_compromissos.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 2em;
+    text-align: center;
   }
 
   .politica h2 {
-    margin-bottom: 1em;
-    color: #162a45;
+    margin-bottom: 0.5em;
+    color: #1a2948;
+    font-size: 3em;
   }
 
   .politica h3 {
-    margin-bottom: 1em;
-    color: #162a45;
+      font-size: 1.5em;
+      color: white;
+      box-shadow: 10px 0 0 0 #1a2948, -10px 0 0 0 #1a2948;
+      background: #1a2948;
+      display: block;
+      font-style: italic;
+  }
+    .politica h4 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: #1a2948;
+    font-size: 3em;
+  }
+  .comprom {
+    display: grid;
+    gap: 1em;
+    justify-content: space-evenly;
+    grid-gap: 25px;
   }
 
+  .compr {
+    height: 95px;
+    width: 198px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 500ms;
+    border-radius: 10px;
+    padding: 2px;
+  }
+
+  .princp {
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+  }
+
+  .princ {
+    height: 22.5px;
+    width: 221px;
+    object-fit: scale-down; 
+    object-position: top;
+    transition: transform 500ms;
+    border-radius: 10px;
+    padding: 2px;
+  }
+
+
+    
+ /* se a tela tiver pelo menos 300px*/
+ @media (min-width: 300px) {
+  .politica {
+    height: 1500px;
+  }
+    .comprom {
+    grid-template-columns: 250px;
+  }
+  .compr:hover {
+    transform: scale(1.5);
+    background-image: url("../img/fdblk.png");
+  }
+  .princp h3{
+    grid-template-columns: 100px 100px;
+  }
+  
+  .princp {
+    grid-template-columns: 230px;
+  }
+  .youtube {
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+    grid-template-columns: 300px;
+  }
+  .jornalista {
+    height: 1500px;
+  }
+  .jornal {
+    grid-template-columns: 300px;
+  }
+ }
+
+/* se a tela tiver pelo menos 600px*/
+@media (min-width: 600px) {
+  .politica {
+    height: 1100px;
+  }
+  .comprom {
+    grid-template-columns: 250px 250px;
+  }
+  .compr:hover {
+    transform: scale(1.5);
+  }
+  .princp h3 {
+    grid-template-columns: 100px 100px 100px;
+  }
+  .princp {
+    grid-template-columns: 230px 230px;
+  }
+  .youtube {
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+    grid-template-columns: 300px 300px;
+}
+  .jornalista {
+    height: 1100px;
+  }
+  .jornal {
+    grid-template-columns: 300px 300px;
+  }
+}
+
+/* se a tela tiver pelo menos 1000px*/
+@media (min-width: 1000px) {
+  .politica {
+    height: 1000px;
+  }
+  .comprom {
+    grid-template-columns: 300px 300px 300px;
+  }
+  .compr {
+    height: 142.5px;
+    width: 297.5px;
+  } 
+  .compr:hover {
+    transform: scale(1.2);
+    
+  }
+  .princp {
+    grid-template-columns: 230px 230px 230px 230px;
+  }
+  .youtube {
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px;
+  }
+  .jornalista {
+    height: 860px;
+  }
+  .jornal {
+    grid-template-columns: 300px 300px 300px;
+  }
+}
   .empresaria {
-    background: deepskyblue;
-    height: 80vh;
     text-align: center;
     padding: 2em;
+    background-color: white;
+    background-image: url("../img/bg1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
   }
   
   .empresaria h2 {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    font-size: 3em;
+    color: #1a2948;
   }
   
   .empresaria h3 {
@@ -205,14 +419,17 @@ header {
   }
 
   .contatos {
-    background-color: cornflowerblue;
-    height: 25vh;
     text-align: center;
     padding: 2em;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
   }
 
   .contatos h2 {
-    margin-bottom: 1em;
+    font-size: 3em;
+    color: #1a2948
   }
 
   .contatos h3 {
@@ -220,20 +437,18 @@ header {
   }
 
   .contato {
-    background-color: cornflowerblue;
     display: flex;
     justify-content: space-around;
     align-content: space-evenly;
   }
 
   .contatos a {
-    color: whitesmoke;
-    font-size: 2em;
+    color: #1a2948;
+    font-size: 2.5em;
     transition: 1s;
-    margin-bottom: 1em;
   }
 
   .contatos a:active,
   .contatos a:hover {
-    text-shadow: 0px 0px 3px white;
+    text-shadow: 3px 3px 10px #1a2948;
   }
