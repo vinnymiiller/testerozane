@@ -209,12 +209,12 @@ header {
     font-size: 1.5em;
   }
 
-  .jornalista a {
+  .politica a {
     margin-bottom: 1em;
     transition: 500ms;
   }
-  .jornalista a:active,
-  .jornalista a:hover {
+  .politica a:active,
+  .politica a:hover {
     scale: 1.25;
   }
   .youtube {
