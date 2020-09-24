@@ -142,7 +142,7 @@ header {
     font-style: italic;
     margin-top: 1em;
     color: white;
-    background: #1a2948;
+    background-image: url("../img/fdblue.png");
     display: flex;
   }
 
@@ -203,7 +203,7 @@ header {
     color: #1a2948;
     font-size: 1.5em;
   }
-  .jornalista h4 {
+  .politica h5 {
     margin-bottom: 1em;
     color: #1a2948;
     font-size: 1.5em;
@@ -256,10 +256,10 @@ header {
   .politica h3 {
       font-size: 1.5em;
       color: white;
-      box-shadow: 10px 0 0 0 #1a2948, -10px 0 0 0 #1a2948;
-      background: #1a2948;
+      background-image: url("../img/fdblue.png");
       display: block;
       font-style: italic;
+      margin-bottom: 0.5em;
   }
     .politica h4 {
     margin-top: 0.5em;
@@ -305,7 +305,7 @@ header {
  /* se a tela tiver pelo menos 300px*/
  @media (min-width: 300px) {
   .politica {
-    height: 1500px;
+    height: 2400px;
   }
     .comprom {
     grid-template-columns: 250px;
@@ -327,9 +327,7 @@ header {
     justify-content: center;
     grid-template-columns: 300px;
   }
-  .jornalista {
-    height: 1500px;
-  }
+  
   .jornal {
     grid-template-columns: 300px;
   }
@@ -338,7 +336,7 @@ header {
 /* se a tela tiver pelo menos 600px*/
 @media (min-width: 600px) {
   .politica {
-    height: 1100px;
+    height: 1550px;
   }
   .comprom {
     grid-template-columns: 250px 250px;
@@ -358,9 +356,7 @@ header {
     justify-content: center;
     grid-template-columns: 300px 300px;
 }
-  .jornalista {
-    height: 1100px;
-  }
+
   .jornal {
     grid-template-columns: 300px 300px;
   }
@@ -369,7 +365,7 @@ header {
 /* se a tela tiver pelo menos 1000px*/
 @media (min-width: 1000px) {
   .politica {
-    height: 1000px;
+    height: 1350px;
   }
   .comprom {
     grid-template-columns: 300px 300px 300px;
@@ -391,9 +387,7 @@ header {
     justify-content: center;
     grid-template-columns: 300px 300px 300px;
   }
-  .jornalista {
-    height: 860px;
-  }
+
   .jornal {
     grid-template-columns: 300px 300px 300px;
   }
