@@ -135,6 +135,7 @@ header {
     text-align: justify;
     color: #1a2948;
     line-height: 1.25em;
+    font-size: 0.75em;
   }
   .sobre h4 {
     font-family: 'Varela Round', sans-serif;
@@ -164,36 +165,34 @@ header {
   }
 
   .imgsobre {
-      height: 150px;
-      width: 150px;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 10px;
+      height: 250px;
+      border-radius: 15px;
+      float: left;
+      margin-right: 10px;
+  }
+  .campjorn {
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+    grid-template-columns: 300px 300px;
   }
   .jorn {
-      height: 150px;
-      width: 150px;
+      height: 250px;
       object-fit: cover;
-      object-position: center;
-      border-radius: 10px;
-  }
-
-  .jorn {
-    transition: transform 500ms;
-  }
-
-  .jorn:hover {
-    transform: scale(1.5);
+      border-radius: 15px;
+      float: right;
+      margin-left: 10px;
   }
 
   .jornalista {
-    height: 500px;
     padding: 2em;
     text-align: center;
   }
 
-  .jornalista h2 {
+  .jornalista h2,
+  .jornalista h5 {
     margin-bottom: 0.5em;
+    margin-top: 0.5em;
     font-size: 3em;
     color: #1a2948;
   }
@@ -203,12 +202,30 @@ header {
     color: #1a2948;
     font-size: 1.5em;
   }
+  .jornalista h4,
+  .jornalista h6 {
+    color: #1a2948;
+    font-size: 1em;
+    margin-bottom: 0.25em;
+  }
+  .jornimg {
+    width: 250px;
+    border-radius: 15px;
+    float: left;
+  }
+  .jornimgs {
+    width: 250px;
+    border-radius: 15px;
+  }
   .politica h5 {
     margin-bottom: 1em;
     color: #1a2948;
     font-size: 1.5em;
   }
-
+  .politica p {
+    color: #1a2948;
+    font-size: 1.25em;
+  }
   .politica a {
     margin-bottom: 1em;
     transition: 500ms;
@@ -235,7 +252,6 @@ header {
   }
 
   .politica {
-    height: 80vh;
     text-align: center;
     padding: 2em;
     background: #f9730e;
@@ -246,13 +262,25 @@ header {
     padding: 2em;
     text-align: center;
   }
-
+  .politica h1{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  figcaption {
+    color: white;
+  }
   .politica h2 {
     margin-bottom: 0.5em;
     color: #1a2948;
     font-size: 3em;
   }
-
+  .imgpolitz {
+    width: 250px;
+    border-radius: 15px;
+    float: left;
+    margin-right: 5px;
+  }
   .politica h3 {
       font-size: 1.5em;
       color: white;
@@ -267,131 +295,54 @@ header {
     color: #1a2948;
     font-size: 2.2em;
   }
+  .politica h6 {
+    font-size: 1em;
+    color: #1a2948;
+    margin-bottom: 10em;
+  }
+  .imgpolitz p {
+    margin-bottom: 1em;
+  }
   .comprom {
     display: grid;
     gap: 1em;
-    justify-content: space-evenly;
+    justify-content: center;
     grid-gap: 25px;
+    grid-template-columns: 300px 300px;
   }
 
-  .compr {
-    height: 95px;
-    width: 198px;
-    object-fit: cover;
-    object-position: center;
-    transition: transform 500ms;
-    border-radius: 10px;
-    padding: 2px;
-  }
-
-  .princp {
+  .fotpol {
     display: grid;
     gap: 1em;
     justify-content: center;
+    grid-template-columns: 300px 300px;
+  }
+  .polfam {
+    height: 300px;
+    border-radius: 15px;
+    
   }
 
+  .compr,
   .princ {
-    height: 22.5px;
-    width: 221px;
-    object-fit: scale-down; 
-    object-position: top;
+    width: 220px;
     transition: transform 500ms;
     border-radius: 10px;
     padding: 2px;
   }
 
-
-    
- /* se a tela tiver pelo menos 300px*/
- @media (min-width: 300px) {
-  .politica {
-    height: 2400px;
-  }
-    .comprom {
-    grid-template-columns: 250px;
-  }
-  .compr:hover {
-    transform: scale(1.5);
-    background-image: url("../img/fdblk.png");
-  }
-  .princp h3{
-    grid-template-columns: 100px 100px;
-  }
-  
   .princp {
-    grid-template-columns: 230px;
-  }
-  .youtube {
-    display: grid;
-    gap: 1em;
-    justify-content: center;
-    grid-template-columns: 300px;
-  }
-  
-  .jornal {
-    grid-template-columns: 300px;
-  }
- }
-
-/* se a tela tiver pelo menos 600px*/
-@media (min-width: 600px) {
-  .politica {
-    height: 1550px;
-  }
-  .comprom {
-    grid-template-columns: 250px 250px;
-  }
-  .compr:hover {
-    transform: scale(1.5);
-  }
-  .princp h3 {
-    grid-template-columns: 100px 100px 100px;
-  }
-  .princp {
-    grid-template-columns: 230px 230px;
-  }
-  .youtube {
     display: grid;
     gap: 1em;
     justify-content: center;
     grid-template-columns: 300px 300px;
-}
+    margin-bottom: 20px;
+  }
 
-  .jornal {
-    grid-template-columns: 300px 300px;
-  }
-}
 
-/* se a tela tiver pelo menos 1000px*/
-@media (min-width: 1000px) {
-  .politica {
-    height: 1350px;
-  }
-  .comprom {
-    grid-template-columns: 300px 300px 300px;
-  }
-  .compr {
-    height: 142.5px;
-    width: 297.5px;
-  } 
-  .compr:hover {
-    transform: scale(1.2);
+
     
-  }
-  .princp {
-    grid-template-columns: 230px 230px 230px 230px;
-  }
-  .youtube {
-    display: grid;
-    gap: 1em;
-    justify-content: center;
-    grid-template-columns: 300px 300px 300px;
-  }
 
-  .jornal {
-    grid-template-columns: 300px 300px 300px;
-  }
-}
   .empresaria {
     text-align: center;
     padding: 2em;
@@ -409,6 +360,10 @@ header {
   }
   
   .empresaria h3 {
+    margin-bottom: 1em;
+    color: #1a2948;
+  }
+  .empresaria h4 {
     margin-bottom: 1em;
     color: #1a2948;
   }
