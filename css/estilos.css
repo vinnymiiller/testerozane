@@ -7,11 +7,11 @@
 
 body {
     background: White;
-    font-family: 'Varela Round', sans-serif; 
+    font-family: 'Quicksand', sans-serif; 
     height: 90vh;
     font-size: 10px;
     background-color: white;
-    background-image: url("../img/bg1.jpg");
+    background-image: url("../img/bg2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -109,7 +109,7 @@ header {
   .sobre {
     background-color:#ffcac2;
     text-align: center;
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/2bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -131,14 +131,14 @@ header {
   }
   .sobre p {
     margin-bottom: 1.5em;
-    font-family: 'montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     text-align: justify;
     color: #1a2948;
     line-height: 1.25em;
     font-size: 0.75em;
   }
   .sobre h4 {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 1.5em;
     font-style: italic;
     margin-top: 1em;
@@ -154,7 +154,7 @@ header {
   }
   .imgquem {
     height: auto;
-    width: 250px;
+    width: 188px;
     border-radius: 15px;
   }
 
@@ -174,7 +174,7 @@ header {
     display: grid;
     gap: 1em;
     justify-content: center;
-    grid-template-columns: 300px 300px;
+    /*grid-template-columns: 300px 300px;*/
   }
   .jorn {
       height: 250px;
@@ -183,6 +183,20 @@ header {
       float: right;
       margin-left: 10px;
   }
+  .agt1 {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.agt2 {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
   .jornalista {
     padding: 2em;
@@ -209,7 +223,7 @@ header {
     margin-bottom: 0.25em;
   }
   .jornimg {
-    width: 250px;
+    width: 200px;
     border-radius: 15px;
     float: left;
   }
@@ -238,7 +252,7 @@ header {
     display: grid;
     gap: 1em;
     justify-content: center;
-    grid-template-columns: 300px 300px 300px;
+    /*grid-template-columns: 300px 300px 300px;*/
   }
   .youtube img {
     border-radius: 10px;
@@ -255,7 +269,7 @@ header {
     text-align: center;
     padding: 2em;
     background: #f9730e;
-    background-image: url("../img/bg_compromissos.jpg");
+    background-image: url("../img/bg_compromissos2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -308,14 +322,14 @@ header {
     gap: 1em;
     justify-content: center;
     grid-gap: 25px;
-    grid-template-columns: 300px 300px;
+    /*grid-template-columns: 300px 300px;*/
   }
 
   .fotpol {
     display: grid;
     gap: 1em;
     justify-content: center;
-    grid-template-columns: 300px 300px;
+    /*grid-template-columns: 300px 300px;*/
   }
   .polfam {
     height: 300px;
@@ -335,7 +349,7 @@ header {
     display: grid;
     gap: 1em;
     justify-content: center;
-    grid-template-columns: 300px 300px;
+    /*grid-template-columns: 300px 300px;*/
     margin-bottom: 20px;
   }
 
@@ -347,7 +361,7 @@ header {
     text-align: center;
     padding: 2em;
     background-color: white;
-    background-image: url("../img/bg1.jpg");
+    background-image: url("../img/bg2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -371,7 +385,7 @@ header {
   .contatos {
     text-align: center;
     padding: 2em;
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/2bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
