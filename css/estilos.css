@@ -63,7 +63,7 @@ header {
     box-shadow: 10px 0 0 0 #1a2948, -10px 0 0 0 #1a2948;
     background: #1a2948;
     display: inline;
-    padding: 3px 0 !important;
+    padding: 3px 0;
   }
  
   .site-subtitle {
@@ -88,7 +88,7 @@ header {
     box-shadow: 10px 0 0 0 #f9730e, -10px 0 0 0 #f9730e;
     background: #f9730e;
     display: block;
-    padding: 3px 0 !important;
+    padding: 3px 0;
   }
 
   .jornalista,
@@ -198,7 +198,6 @@ header {
 
   .jornalista h2 {
     margin-bottom: 0.5em;
-    margin-top: 0.5em;
     font-size: 3em;
     color: #1a2948;
   }
