@@ -190,6 +190,11 @@ header {
     object-fit: cover;
     border-radius: 15px;
     }
+  .novo {
+    width: 350px;
+    height: 200px;
+    object-fit: contain;
+  }
 
   .jornalista {
     padding: 2em;
