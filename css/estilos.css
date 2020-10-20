@@ -11,7 +11,7 @@ body {
     height: 90vh;
     font-size: 10px;
     background-color: white;
-    background-image: url("../img/bg2.jpg");
+    background-image: url("../img/bg21.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -95,7 +95,7 @@ header {
   .sobre {
     background-color:#ffcac2;
     text-align: center;
-    background-image: url("../img/2bg2.jpg");
+    background-image: url("../img/2bg21.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -241,10 +241,11 @@ header {
   .politica p {
     color: #1a2948;
     font-size: 1.25em;
+    font-weight: bold;
   }
   .politica a {
-    margin-bottom: 1em;
     transition: 500ms;
+    font-size: 5em;
   }
   .politica a:active,
   .politica a:hover {
@@ -358,14 +359,11 @@ header {
   }
 
 
-
-    
-
   .empresaria {
     text-align: center;
     padding: 2em;
     background-color: white;
-    background-image: url("../img/bg2.jpg");
+    background-image: url("../img/bg21.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -391,7 +389,7 @@ header {
   .contatos {
     text-align: center;
     padding: 2em;
-    background-image: url("../img/2bg2.jpg");
+    background-image: url("../img/2bg21.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -414,7 +412,7 @@ header {
 
   .contatos a {
     color: #1a2948;
-    font-size: 2.5em;
+    font-size: 3.5em;
     transition: 1s;
   }
 
